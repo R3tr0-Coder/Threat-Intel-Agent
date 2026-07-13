@@ -14,7 +14,7 @@ Sign up for free API keys at each service (all optional — missing keys simply 
 | VirusTotal | https://www.virustotal.com | 500 requests/day |
 | AbuseIPDB | https://www.abuseipdb.com | 1,000 requests/day |
 | AlienVault OTX | https://otx.alienvault.com | ~500 requests/day |
-| NVD | https://nvd.nist.gov | No key needed for basic use |
+| NVD | https://nvd.nist.gov | 5 requests/30 seconds |
 | Google Gemini | https://aistudio.google.com | Free tier available |
 | OpenRouter | https://openrouter.ai | Free models available |
 
