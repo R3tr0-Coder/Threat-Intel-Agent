@@ -86,17 +86,17 @@ No code to write, no terminal commands to memorize beyond these three steps.
 
 ```
 User query ──► Injection Guard ──► Context Manager ──► Intent Parser (LLM)
+                                                            │
+                                                            ▼
+                                                        Tool Layer
+                                                  ┌─────┬───┼─────┐
+                                                  ▼     ▼   ▼     ▼
+                                                  VT  Abuse OTX  NVD   
+                                                  │     │   │     │     
+                                                  └─────┴───┴─────┘
                                                           │
                                                           ▼
-                                                      Tool Layer
-                                               ┌─────┬───┼──┬─────┐
-                                               ▼     ▼   ▼  ▼     ▼
-                                            VT  Abuse OTX NVD   
-                                               │     │   │  │     
-                                               └─────┴───┴──┴─────┘
-                                                          │
-                                                          ▼
-                                              Confidence Scorer
+                                                   Confidence Scorer
                                                           │
                                                           ▼
                                               Response Generator (LLM)
