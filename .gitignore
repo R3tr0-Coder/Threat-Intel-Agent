@@ -1,0 +1,14 @@
+.env
+__pycache__/
+*.pyc
+.pytest_cache/
+*.log
+*.db
+venv/
+.venv/
+.vscode/
+.DS_Store
+
+# Build artifacts
+build/embed/
+build/output/
