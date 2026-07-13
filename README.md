@@ -1,3 +1,5 @@
+<img src="screenshots/Full-UI.png">
+
 # Threat Intelligence Analyst
 
 An agentic AI application for SOC (Security Operations Center) analysts to query threat intelligence data in natural language. Built with Google Gemini (Flash 2.0, 2.0 Lite, 2.5, 3.0), OpenRouter, VirusTotal, AbuseIPDB, AlienVault OTX, and NVD.
