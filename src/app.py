@@ -16,7 +16,7 @@ from src.config import RATE_LIMITS, ALL_API_KEYS
 
 st.set_page_config(
     page_title="Threat Intelligence Analyst",
-    page_icon="",
+    page_icon="🛡️",
     layout="wide",
 )
 
@@ -420,24 +420,35 @@ div[data-testid="stPopoverBody"] button:hover {
 }
 
 /* Message action buttons - compact icons in chat */
-div[data-testid="stChatMessage"] .stButton > button {
+div[data-testid="stChatMessage"] div[data-testid="stButton"] {
+    min-width: unset !important;
+    width: auto !important;
+    display: inline-block !important;
+}
+div[data-testid="stChatMessage"] div[data-testid="stButton"] button {
     background: transparent !important;
     border: 1px solid transparent !important;
     color: #666 !important;
-    font-size: 14px !important;
-    padding: 2px 6px !important;
-    min-width: 0 !important;
+    font-size: 16px !important;
+    padding: 4px 8px !important;
+    min-width: unset !important;
     width: auto !important;
-    height: 26px !important;
-    line-height: 1 !important;
+    height: 32px !important;
+    line-height: 1.2 !important;
     border-radius: 6px !important;
     margin: 0 !important;
     transition: all 0.15s ease !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
 }
-div[data-testid="stChatMessage"] .stButton > button:hover {
+div[data-testid="stChatMessage"] div[data-testid="stButton"] button:hover {
     background: rgba(255,255,255,0.08) !important;
     border-color: rgba(255,255,255,0.1) !important;
     color: #aaa !important;
+}
+div[data-testid="stChatMessage"] div[data-testid="stHorizontalBlock"] div[data-testid="stVerticalBlock"] div[data-testid="stHorizontalBlock"] {
+    gap: 0 !important;
 }
 div[data-testid="stChatMessage"] .stColumns {
     gap: 4px !important;
